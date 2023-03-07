@@ -3,33 +3,33 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
+  <title>GitHub Search App</title>
   <script defer src='js/index.js'></script>
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
-  <div id='main'>
+  <header id='main'>
 
     <h2>GitHub Search</h2>
-
     <form id='github-form'>
-      <input id='search' type='text' name='search'>Search by User Keyword
-      <input type='submit' name='submit'/>
+      <input id='search' type='text' name='search' placeholder="Enter Keyword Here">
+      <br>
+      <input type='submit' id="user-submit" name='submit' value='Search by User Keyword' onclick="userSearch()"/>
+      <br>
+      <input type="submit" id="keyword-submit" name='submit' value='Search by Repo Keyword' onclick="keywordSearch()"/>
     </form>
-    <form id='github-form-keyword'>
-      <input id='search' type='text' name='search'>Search by Repo Keyword
-      <input type='submit' name='submit'/>
-    </form>
-
+    </header>
     <div id='github-container'>
       <ul id='user-list'>
 
       </ul>
-
+    </div>
+    <div>
       <ul id='repos-list'>
 
       </ul>
     </div>
+
 
   </div>
 

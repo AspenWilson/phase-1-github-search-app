@@ -1,26 +1,46 @@
-#main {
-  display: flex;
-  flex-direction: column;
+header {
+  text-align: center;
   align-items: center;
 }
 
 #github-container {
-  display: flex;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  float: left;
+  width: 70%
 }
 
 #repos-list {
-  list-style: circle;
+  float:right;
+  width: 25%;
+  display:inline;
+  position: fixed
 }
 
+#user-list {
+  columns: 3;
+}
+
+.li-item {
+  background-color:darkslategrey;
+  color: azure;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 5px;
+  border-color: rgb(0, 62, 33);
+  text-align: center;
+}
+* {box-sizing: border-box;}
+
 img {
-  border: 1px solid #ddd;
+  border: 3px solid #ddd;
   border-radius: 8px;
   padding: 5px;
   width: 150px;
 }
 
 h1 {
-  background-color: rgb(232, 226, 226);
   font-family: Arial, Helvetica, sans-serif;
   font-size: smaller;
 }
@@ -29,17 +49,16 @@ button {
   text-align: center;
   border-radius: 8px;
   transition-duration: 0.4s;
-  display: block;
   position: center;
 }
 button:hover {
   background-color: aquamarine;
   color: darkolivegreen;
 }
-.button {
+a.button {
   text-align: center;
   border-radius: 8px;
   transition-duration: 0.4s;
-  display: block;
   position: center;
+  color:#ddd
 }
